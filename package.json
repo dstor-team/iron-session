@@ -25,6 +25,7 @@
     "next/"
   ],
   "scripts": {
+    "prepare": "npm run build:clean && npm run build:src && npm run build:next",
     "build": "npm run build:clean && npm run build:src && npm run build:next",
     "build:clean": "rimraf dist/ next/dist",
     "build:next": "tsup next/index.ts -d next/dist",
